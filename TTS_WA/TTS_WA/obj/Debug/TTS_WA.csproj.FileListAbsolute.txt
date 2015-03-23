@@ -1,0 +1,5 @@
+C:\Users\usefe_000\Documents\Visual Studio 2010\Projects\TTS_WA\TTS_WA\bin\TTS_WA.dll
+C:\Users\usefe_000\Documents\Visual Studio 2010\Projects\TTS_WA\TTS_WA\bin\TTS_WA.pdb
+C:\Users\usefe_000\Documents\Visual Studio 2010\Projects\TTS_WA\TTS_WA\obj\Debug\TTS_WA.dll
+C:\Users\usefe_000\Documents\Visual Studio 2010\Projects\TTS_WA\TTS_WA\obj\Debug\TTS_WA.pdb
+C:\Users\usefe_000\Documents\Visual Studio 2010\Projects\TTS_WA\TTS_WA\obj\Debug\TTS_WA.csprojResolveAssemblyReference.cache

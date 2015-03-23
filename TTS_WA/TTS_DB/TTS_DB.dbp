@@ -1,0 +1,37 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "TTS_DB"
+   MSDTVersion = "80"
+   DefDBRef = "dellxps400\sqlexpress.TTSDB.dbo"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "CreateFeaturedProducts_tbl.sql"
+      Script = "uspLoad_Products.sql"
+      Script = "uspLoad_Types.sql"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "dellxps400\sqlexpress.TTSDB.dbo"
+         ConnectStr = "Data Source=DELLXPS400\SQLEXPRESS;Initial Catalog=TTSDB;Integrated Security=True"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+      Begin DBRefNode = "tpadlap1\sqlexpress.ttsdb.dbo"
+         ConnectStr = "Data Source=TPADLAP1\SQLEXPRESS;Initial Catalog=ttsdb;Integrated Security=True;Pooling=False"
+         Provider = "{91510608-8809-4020-8897-FBA057E22D54}"
+         Colorizer = 6
+      End
+   End
+   Begin Folder = "Queries"
+      Script = "uspDelProductTypesByProdID_admin.sql"
+      Script = "uspGetAllProducts.sql"
+      Script = "uspGetAllProducts_admin.sql"
+      Script = "uspGetCouponByCode.sql"
+      Script = "uspGetFeaturedProducts.sql"
+      Script = "uspGetProdByType.sql"
+      Script = "uspGetProductByID.sql"
+      Script = "uspGetTypesByProduct_admin.sql"
+      Script = "uspInsProduct_admin.sql"
+      Script = "uspInsProductTypesByProdID_admin.sql"
+      Script = "uspSearchProducts.sql"
+   End
+End

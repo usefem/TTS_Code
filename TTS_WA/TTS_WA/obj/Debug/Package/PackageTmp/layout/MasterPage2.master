@@ -1,0 +1,208 @@
+<%@ Master Language="C#" AutoEventWireup="true"
+    Inherits="TTS.layout.layout_MasterPage2" Codebehind="MasterPage2.master.cs" %>
+
+<%@ Register Src="~/uc/ProductSearch.ascx" TagName="ProdSearch" TagPrefix="ucPS" %>    
+<%@ Register Src="~/uc/CouponSearch.ascx" TagName="CouponSearch" TagPrefix="ucCoupon" %>    
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="keywords" content=" Teachers, Schools, Math, File Folders, Language Arts, Children`s Books, Black Interest, Science, Teaching Resources, Spanish, Games, Religious, Specialty Items, Clothing, Students, Shopping, Discounts" />
+    <meta name="robots" content="index,follow" />
+    <asp:literal runat="server" id="litMetaDesc" />
+    <asp:literal runat="server" id="litTitle" />
+    <asp:literal runat="server" id="litMetaTag" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>    
+    
+
+    
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Original:  Premshree Pillai (premshree@hotmail.com ) -->
+<!-- Web Site:  http://www.qiksearch.com -->
+<!-- Begin
+
+window.onerror = null;
+ var bName = navigator.appName;
+ var bVer = parseInt(navigator.appVersion);
+ var NS4 = (bName == "Netscape" && bVer >= 4);
+ var IE4 = (bName == "Microsoft Internet Explorer" 
+ && bVer >= 4);
+ var NS3 = (bName == "Netscape" && bVer < 4);
+ var IE3 = (bName == "Microsoft Internet Explorer" 
+ && bVer < 4);
+ var blink_speed=800;
+ var i=0;
+ 
+if (NS4 || IE4) {
+ if (navigator.appName == "Netscape") {
+ layerStyleRef="layer.";
+ layerRef="document.layers";
+ styleSwitch="";
+ }else{
+ layerStyleRef="layer.style.";
+ layerRef="document.all";
+ styleSwitch=".style";
+ }
+}
+
+//BLINKING
+function Blink(layerName){
+ if (NS4 || IE4) { 
+ if(i%2==0)
+ {
+ eval(layerRef+'["'+layerName+'"]'+
+ styleSwitch+'.visibility="visible"');
+ }
+ else
+ {
+ eval(layerRef+'["'+layerName+'"]'+
+ styleSwitch+'.visibility="hidden"');
+ }
+ } 
+ if(i<1)
+ {
+ i++;
+ } 
+ else
+ {
+ i--
+ }
+ setTimeout("Blink('"+layerName+"')",blink_speed);
+}
+//  End -->
+</script>
+   
+</head>
+<body style="margin-top:8px">
+<form runat="server">
+    <div id="container">
+        <div id="header">
+            <table border="0"  cellspacing="0" style="width:100%">
+                <tr>
+                    <td width="33%">
+                        <center>
+                            <img src="img/clrpencils.gif" width="75" height="80" /><br />
+                            <br />
+                            <p>
+                                <%=GetDateStr%>
+                            </p>
+                    </td>
+                    <td width="33%">
+                        <center>
+                            <img src="/img/ts_logo2.gif" /></center>
+                    </td>
+                    <td width="33%">
+                        <center>
+                            <img src="/img/clrschool.gif" /></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"  >
+                        <table border="0" style="width:975px; padding:0;">
+                            <tr>
+                                <td align="left">
+                                    <img src="/img/PaymentOptions.JPG" alt="Payment Options" />
+                                </td>
+                                <td align="left">
+                                    <ucPS:ProdSearch runat="server" ID="ucProductSearch" />
+                                </td>
+                                <td align="right" style="padding-right:5px">
+                                    <b><a href="/PrintableOrderForm.aspx" title="Order Form" style="color:black " >VIEW PRICE LIST</a></b>
+                                </td>
+                            </tr>
+                        </table>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style=" background-color:Green;width:995px;  ">
+                         <ucCoupon:CouponSearch runat="server" ID="ProdSearch1" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+</form>    
+        <div id="menu1">
+            <ul>
+                <li><a href="Default.aspx" title="Home Page">Home</a></li>
+                <li><a href="Products.aspx" title="All Products">All Products</a></li>
+                <li><a href="Products.aspx?CatId=gft" title="Gifts for the Teacher">Teacher's Gifts</a></li>                
+                <%--<li><a href="Products.aspx?CatId=ce" title="Character Education">Character Education</a></li>--%>
+                <li><a href="Products.aspx?CatId=math" title="Math">Math</a></li>
+                <li><a href="Products.aspx?CatId=la" title="Language Arts">Language Arts</a></li>
+                <%--<li><a href="Products.aspx?CatId=cb" title="Children's Books">Children's Books</a></li>--%>
+                <li><a href="Products.aspx?CatId=bi" title="Black Intrest">Black Interest</a></li>
+                <%--<li><a href="Products.aspx?CatId=sci" title="Science">Science</a></li>--%>
+                <li><a href="Products.aspx?CatId=tr" title="Teaching Resources">Teaching Resources</a></li>
+                <li><a href="Products.aspx?CatId=sp" title="Spanish">Spanish</a></li>
+                <li><a href="Products.aspx?CatId=ga" title="Games">Games</a></li>
+                <li><a href="Products.aspx?CatId=rel" title="Religious">Religious</a></li>
+                <%--<li><a href="Products.aspx?CatId=si" title="Specialty Items">Specialty Items</a></li>--%>
+                <li><a href="Products.aspx?CatId=clo" title="Games">Clothing</a></li>
+                <li><a href="Products.aspx?CatId=oth" title="Other">Other</a></li>
+               <%-- <li><a href="Products.aspx?CatId=brg" title="2$ and Under">Bargains</a></li>--%>
+                <li><a href="ContactUs.aspx" title="Contact Us">Contact Us</a></li>
+                <li><a href="PrintableOrderForm.aspx" title="Order Form">Order Form</a></li>
+                <!--
+			<li><a href="#3" title="Link 3">Link 3</a></li>
+			<li><a href="#4" title="Link 4">Link 4</a></li>
+			<li><a href="#5" title="Link 5">Link 5</a></li>	
+			-->
+            </ul>
+        </div>
+        <!---
+	<div id="sidebar">
+	
+		<h2> Sidebar</h2>
+	    <p><img src="arrow.gif" alt="Arrow" width="6" height="5" /> Here is the sidebar. I guess you can really do whatever you want with it, be it news items or just good old fashion jibberish. Anyways, I am sure you are clever enough to think up something useful. </p>
+	    <p><img src="arrow.gif" alt="Arrow" width="6" height="5" /> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas venenatis enim ut purus. In hac <a href="#">habitasse platea</a> dictumst. Sed rutrum tempus turpis. Sed rhoncus dui eu ipsum. Pellentesque tincidunt. Quisque pulvinar. Morbi quis leo sit amet neque tempor fringilla. Pellentesque faucibus metus vitae erat. Quisque a urna ut sapien accumsan ornare. Nulla porta pretium eros. Fusce velit erat, accumsan pellentesque, porttitor eu, commodo quis, augue. <a href="#">Fusce convallis ipsum eget felis</a>. </p>
+	    <p><img src="arrow.gif" alt="Arrow" width="6" height="5" /> Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id <a href="#">malesuada</a> arcu nulla luctus urna. </p>
+		
+	</div>
+-->
+        <div id="content" >
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <div id="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td align="center">
+                            <img src="img/PaymentOptions.JPG" alt="Payment Options" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Copyright &copy; The Teacher's Spot | Design by <a style="color: Black;" href="mailto:Webmaster@TheTeachersSpot.com">
+                                    UEM Inc.</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-7417690-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+    
+</body>
+</html>

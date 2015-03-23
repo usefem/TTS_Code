@@ -1,0 +1,32 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="layout_Admin_layout" Codebehind="Admin_layout.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>The Teacher's Spot - Admin</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    	<div id="header">
+	<table border="0" width="975" cellspacing="0">
+	<tr>
+	<td width="33%"><center><img src="../img/clrpencils.gif"  width="75" height="80" /><br /><br /><p><%=GetDateStr%></p></td>
+	<td width="33%"><center><img src="../img/ts_logo2.gif" /></center></td>
+	<td width="33%"><center><img src="../img/clrschool.gif" /></center></td>
+	</tr>
+	<tr>
+	<td colspan="3" align="left"  ><img src="../img/PaymentOptions.JPG" alt="Payment Options" /></td>
+	</tr>
+	</table>
+
+	</div>
+    <div style="width:975px">
+        <asp:contentplaceholder id="MainContent" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

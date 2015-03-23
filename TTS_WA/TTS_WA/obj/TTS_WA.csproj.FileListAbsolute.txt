@@ -1,0 +1,5 @@
+C:\Documents and Settings\usef\My Documents\Visual Studio 2005\Projects\TTS_WA\TTS_WA\bin\TTS_WA.dll
+C:\Documents and Settings\usef\My Documents\Visual Studio 2005\Projects\TTS_WA\TTS_WA\bin\TTS_WA.pdb
+C:\Documents and Settings\usef\My Documents\Visual Studio 2005\Projects\TTS_WA\TTS_WA\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\usef\My Documents\Visual Studio 2005\Projects\TTS_WA\TTS_WA\obj\Debug\TTS_WA.dll
+C:\Documents and Settings\usef\My Documents\Visual Studio 2005\Projects\TTS_WA\TTS_WA\obj\Debug\TTS_WA.pdb

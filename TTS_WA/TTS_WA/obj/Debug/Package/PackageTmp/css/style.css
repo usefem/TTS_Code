@@ -1,0 +1,284 @@
+/* BODY AND CONTAINER */
+
+		body 
+		{
+		     background:#39414A;
+			/*background-color: #6699CC;*/
+			}
+
+		#container {
+			width: 1000px;
+			margin: 0 auto;
+			font-family:  Comic Sans MS , Tahoma, Arial, Helvetica, sans-serif; /* Lucida Grande for the Macs, Tahoma for the PCs */
+			font-size: 14px;
+			line-height: 1.6em;
+			color: black;
+			/*background-color: #FF3300 ;*/
+			/*background-color: #FF3333 ;*/
+			background-color: #ffffff;
+			border: 0px solid #948979;
+		}
+		
+/* GENERAL STYLES */
+		
+		h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			font-size: 64px;
+			color: #FFFFFF;
+			margin-bottom: 30px;
+			padding-left: 250px;
+		}
+		
+		h2 {
+			color: #666666;
+			font-size: 16px;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #B2ABA2;
+		}
+
+		a {
+			/*color: #66749A;*/
+			text-decoration: none;
+		}
+
+		/*
+		a:hover {
+			color: #566590;
+		}
+		*/
+
+/*
+		form {
+			float:right;
+			margin-top: -45px;
+			font-size: 9px;
+			padding-right: 10px;
+		}
+*/
+		
+		input {
+			background-color: #D1C9BE;
+			color: #000000;
+			border: 1px solid #000000;
+			font-size: 11px;
+			padding: 3px;
+		}
+		
+		.button {
+			padding: 2px;
+		}
+		
+/* IMAGES */		
+/*		
+		a img{
+	  		border: none;
+	  	}
+
+		img.left,img.center,img.right {
+	  		padding: 4px;
+	  		border: 1px dashed #D1C9BE;
+	  		margin: 0px;
+	  	}
+
+		img.left {
+	  		float: left;
+	  		margin: 0 12px 5px 0;
+	  	}
+
+		img.center {
+			display: block;
+	  		margin: 0 auto 5px auto;
+	  	}
+	
+		img.right {
+	  		float: right;
+	  		margin: 0 0 5px 12px;
+	  	}
+
+*/		
+/* HEADER */
+
+		#header {
+			border-bottom: 4px solid #948979;
+			padding-top: 5px;
+			clear: both;
+			margin-bottom: 15px;
+			/*background-image: url(../img/blue_bg.jpg);*/
+			background-color: #EEF3E2;/*#3333FF;*/
+
+		}
+		
+		#header p { 
+			margin-top: -10px;
+			margin-left: 5px;
+			color: #EFEFEF;
+		}
+
+/* NAVIGATION */
+	
+		#menu1 {
+			width: 160px;
+			margin: 10px;
+			border-style:  solid solid solid solid;
+			border-color: #3D261D;
+			border-width: 1px;
+			border-style: solid;
+			border-bottom: solid;
+			float: left;
+		}
+	
+		#menu1 li a {
+			height: 32px;
+  			voice-family: "\"}\""; 
+  			voice-family: inherit;
+  			height: 24px;
+  			font-weight:bold;
+			text-decoration: none;
+			color: White;
+		}	
+	
+		#menu1 li a:link, #menu1 li a:visited {
+			color: #E4D6CD;
+			color: White;
+			display: block;
+			/*background:  url(../img/menu1.gif);*/
+			background-color: #6699CC;
+			padding: 8px 0 0 10px;
+		}
+	
+		#menu1 li a:hover {
+			color: Blue;
+			/*background:  url(../img/menu1.gif) 0 -32px;*/
+			background-color: #CC3333;
+			padding: 8px 0 0 10px;
+		}	
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+   			border: none;
+		} 
+
+		
+/* CONTENT */
+
+		#content 
+		{
+		    float:right;
+			width: 800px;
+			/*height: 100%;*/
+			/* margin-left: 180px; */
+			font-family: Lucida Grande, Tahoma, Arial, Helvetica, sans-serif; /* Lucida Grande for the Macs, Tahoma for the PCs */
+			font-size: 16px;
+	        margin:0px auto; /* Right and left margin widths set to "auto" */
+	        text-align:left; /* Counteract to IE5/Win Hack */			
+		}
+		
+		#content p {
+			padding-bottom: 10px;
+			border-bottom: 1px dashed #D1C9BE;
+		}
+		/*
+		#content a {
+			color: red;
+			text-decoration: none;
+			border-bottom: 1px dashed #66749A;	
+			font-weight: 500;	
+		}
+		
+		#content a:hover{
+			color: #566590;
+			text-decoration: underline;
+			border-bottom: none;	
+			font-weight: 500;	
+		}
+*/
+/* SIDEBAR */
+/*
+		#sidebar {
+			float: right;
+			width: 50px;
+		}
+		
+		#sidebar p {
+			padding-bottom: 10px;
+			margin-right: 10px;
+			border-bottom: 1px dashed #D1C9BE;
+		}
+		
+		#sidebar a {
+			color: #66749A;
+			text-decoration: none;
+			border-bottom: 1px dashed #66749A;	
+			font-weight: 500;	
+		}
+		
+		#sidebar a:hover{
+			color: #566590;
+			text-decoration: underline;
+			border-bottom: none;	
+			font-weight: 500;	
+		}
+*/
+
+/* Advertising */
+
+		#ads {
+			width: 213px;
+			border-style: none;
+			/*margin-top: -800px;*/
+			float:right;
+			text-align:center;
+			/*border-style : solid;*/
+			/*margin-right: 50px;*/
+			font-family: Lucida Grande, Tahoma, Arial, Helvetica, sans-serif; /* Lucida Grande for the Macs, Tahoma for the PCs */
+			font-size: 16px;
+		}
+		
+/* end Advertising*/		
+
+/* Coupons start */
+
+		#priceOrig {
+		    text-decoration:line-through;
+		    color:Red;
+		}
+		
+		#priceSale 
+		{
+             		    
+		}
+
+/* Coupons end   */
+
+
+/* FOOTER */
+
+		#footer {
+			margin-top: 20px;
+			clear: both;
+			background-color: #ffffff;
+			padding: 0px 5px 0px 5px;
+			text-align: center;
+		}
+		
+		#footer p {
+			color:#000000;
+			padding: 5px;
+		}
+		
+		/*
+		#footer p a {
+			color: #000000;
+			border-bottom: 1px dotted #89817f;
+		}
+		
+		#footer p a:hover {
+			color: #FFFFFF;
+		}
+        */

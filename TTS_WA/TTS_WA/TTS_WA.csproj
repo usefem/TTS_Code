@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47FDB6DB-A74B-43F8-9FE8-89D38CB89A0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTS_WA</RootNamespace>
+    <AssemblyName>TTS_WA</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\ActiveProductList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ActiveProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ActiveProductList.aspx.designer.cs">
+      <DependentUpon>ActiveProductList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ProductMaintenance.aspx.cs">
+      <DependentUpon>ProductMaintenance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ProductMaintenance.aspx.designer.cs">
+      <DependentUpon>ProductMaintenance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ProductTypes.aspx.cs">
+      <DependentUpon>ProductTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ProductTypes.aspx.designer.cs">
+      <DependentUpon>ProductTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cancel.aspx.cs">
+      <DependentUpon>Cancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cancel.aspx.designer.cs">
+      <DependentUpon>Cancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="classes\Coupon.cs" />
+    <Compile Include="classes\DataAccess.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="layout\Admin_layout.master.cs">
+      <DependentUpon>Admin_layout.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layout\Admin_layout.master.designer.cs">
+      <DependentUpon>Admin_layout.master</DependentUpon>
+    </Compile>
+    <Compile Include="layout\MasterPage2.master.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layout\MasterPage2.master.designer.cs">
+      <DependentUpon>MasterPage2.master</DependentUpon>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintableOrderForm.aspx.cs">
+      <DependentUpon>PrintableOrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintableOrderForm.aspx.designer.cs">
+      <DependentUpon>PrintableOrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.aspx.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Question.aspx.designer.cs">
+      <DependentUpon>Question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testpage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testpage.aspx.designer.cs">
+      <DependentUpon>testpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThankYou.aspx.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThankYou.aspx.designer.cs">
+      <DependentUpon>ThankYou.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\CouponSearch.ascx.cs">
+      <DependentUpon>CouponSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\CouponSearch.ascx.designer.cs">
+      <DependentUpon>CouponSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\FeaturedProducts.ascx.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\FeaturedProducts.ascx.designer.cs">
+      <DependentUpon>FeaturedProducts.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="uc\ProductSearch.ascx.cs">
+      <DependentUpon>ProductSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uc\ProductSearch.ascx.designer.cs">
+      <DependentUpon>ProductSearch.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\Free Downloads_sm.jpg" />
+    <Content Include="img\TPT Cover.jpg" />
+    <Content Include="PageNotFound.aspx" />
+    <Content Include="uc\CouponSearch.ascx" />
+    <Content Include="uc\ProductSearch.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\ActiveProductList.aspx" />
+    <Content Include="admin\Login.aspx" />
+    <Content Include="admin\main.aspx" />
+    <Content Include="admin\ProductMaintenance.aspx" />
+    <Content Include="admin\ProductTypes.aspx" />
+    <Content Include="Cancel.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="css\colorbox.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\border.png" />
+    <Content Include="images\controls.png" />
+    <Content Include="images\ie6\borderBottomCenter.png" />
+    <Content Include="images\ie6\borderBottomLeft.png" />
+    <Content Include="images\ie6\borderBottomRight.png" />
+    <Content Include="images\ie6\borderMiddleLeft.png" />
+    <Content Include="images\ie6\borderMiddleRight.png" />
+    <Content Include="images\ie6\borderTopCenter.png" />
+    <Content Include="images\ie6\borderTopLeft.png" />
+    <Content Include="images\ie6\borderTopRight.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading_background.png" />
+    <Content Include="images\overlay.png" />
+    <Content Include="img\advertisers\ClickForWorkshops.JPG" />
+    <Content Include="img\advertisers\etiquetteEssentials.JPG" />
+    <Content Include="img\advertisers\FireflyLogo2.JPG" />
+    <Content Include="img\arrow.gif" />
+    <Content Include="img\arrowNext.gif" />
+    <Content Include="img\arrowPrev.gif" />
+    <Content Include="img\blackboard.gif" />
+    <Content Include="img\Blue_bg.JPG" />
+    <Content Include="img\button.png" />
+    <Content Include="img\button_on.png" />
+    <Content Include="img\clrpencils.gif" />
+    <Content Include="img\clrschool.gif" />
+    <Content Include="img\clrsign.gif" />
+    <Content Include="img\header_bg.jpg" />
+    <Content Include="img\more.png" />
+    <Content Include="img\next.png" />
+    <Content Include="img\previous.png" />
+    <Content Include="img\ProdThumbs\100 Math Activities kid by 1st.jpg" />
+    <Content Include="img\ProdThumbs\100 Math Problems Kid by 1st grade.jpg" />
+    <Content Include="img\ProdThumbs\100 Math Problems kid by 2nd.jpg" />
+    <Content Include="img\ProdThumbs\100 words by 1st grade good.jpg" />
+    <Content Include="img\ProdThumbs\11 File Folders.jpg" />
+    <Content Include="img\ProdThumbs\200712020003.JPG" />
+    <Content Include="img\ProdThumbs\200802150002.JPG" />
+    <Content Include="img\ProdThumbs\200802170002.JPG" />
+    <Content Include="img\ProdThumbs\27_9[1].jpg" />
+    <Content Include="img\ProdThumbs\5 Little Pumpkin Glvoe.jpg" />
+    <Content Include="img\ProdThumbs\Add &amp; Sub Puzzle Cards.jpg" />
+    <Content Include="img\ProdThumbs\Algebra at School grade 5.jpg" />
+    <Content Include="img\ProdThumbs\all about me write and read.jpg" />
+    <Content Include="img\ProdThumbs\Alphabet file Series.jpg" />
+    <Content Include="img\ProdThumbs\Alphabet puzzle cards.jpg" />
+    <Content Include="img\ProdThumbs\Apron Short Blk Good.jpg" />
+    <Content Include="img\ProdThumbs\Apron Short Red.jpg" />
+    <Content Include="img\ProdThumbs\Astronaunt ABC Puzzel.jpg" />
+    <Content Include="img\ProdThumbs\Astronomy Cards.jpg" />
+    <Content Include="img\ProdThumbs\Be Boy Buzz.jpg" />
+    <Content Include="img\ProdThumbs\beginning-blends-puzzle-cards.jpg" />
+    <Content Include="img\ProdThumbs\big picture books.jpg" />
+    <Content Include="img\ProdThumbs\Big Red Barn.jpg" />
+    <Content Include="img\ProdThumbs\Black T Teachers Rule Good.jpg" />
+    <Content Include="img\ProdThumbs\Blackberry.jpg" />
+    <Content Include="img\ProdThumbs\Blend Cards.jpg" />
+    <Content Include="img\ProdThumbs\Blue shirt.jpg" />
+    <Content Include="img\ProdThumbs\Bracelet Teacher Magnetic2.jpg" />
+    <Content Include="img\ProdThumbs\Breast Cancer Watch2.jpg" />
+    <Content Include="img\ProdThumbs\Building Read Comp.jpg" />
+    <Content Include="img\ProdThumbs\Celebration Centers.gif" />
+    <Content Include="img\ProdThumbs\Charm Pin.jpg" />
+    <Content Include="img\ProdThumbs\Cheerio El Libro.jpg" />
+    <Content Include="img\ProdThumbs\Chicka chicka.jpg" />
+    <Content Include="img\ProdThumbs\Clear and Simple.jpg" />
+    <Content Include="img\ProdThumbs\Clifford dog school.jpg" />
+    <Content Include="img\ProdThumbs\Close up of School Scarves.jpg" />
+    <Content Include="img\ProdThumbs\Clothes pin game.jpg" />
+    <Content Include="img\ProdThumbs\Division Cards.jpg" />
+    <Content Include="img\ProdThumbs\Doorhanger.jpg" />
+    <Content Include="img\ProdThumbs\EARLYCTR.jpg" />
+    <Content Include="img\ProdThumbs\Earth Science at School K-2 1.jpg" />
+    <Content Include="img\ProdThumbs\Earth Science at School K-2.jpg" />
+    <Content Include="img\ProdThumbs\Eath Science at Home 3-5.jpg" />
+    <Content Include="img\ProdThumbs\ecea_1[1].jpg" />
+    <Content Include="img\ProdThumbs\Excuse Me.jpg" />
+    <Content Include="img\ProdThumbs\Fast Ideas for Busy Kinder.jpg" />
+    <Content Include="img\ProdThumbs\Fast Ideas for Busy Teachers 2-3.jpg" />
+    <Content Include="img\ProdThumbs\Fergus.jpg" />
+    <Content Include="img\ProdThumbs\FFaddcover.jpg" />
+    <Content Include="img\ProdThumbs\FFaddinside.jpg" />
+    <Content Include="img\ProdThumbs\FFPARADE.jpg" />
+    <Content Include="img\ProdThumbs\ffparade1.jpg" />
+    <Content Include="img\ProdThumbs\FFSubtractcover.jpg" />
+    <Content Include="img\ProdThumbs\FFSubtractinside.jpg" />
+    <Content Include="img\ProdThumbs\FFZOO.jpg" />
+    <Content Include="img\ProdThumbs\FFZOO1.jpg" />
+    <Content Include="img\ProdThumbs\File Folder Sequencing.jpg" />
+    <Content Include="img\ProdThumbs\First  Words Flash Cards.jpg" />
+    <Content Include="img\ProdThumbs\Fisher Price Flash Cards.jpg" />
+    <Content Include="img\ProdThumbs\Gammar 6th grade.jpg" />
+    <Content Include="img\ProdThumbs\Grammar.jpg" />
+    <Content Include="img\ProdThumbs\Grammar1.jpg" />
+    <Content Include="img\ProdThumbs\Great Black Heroes Explorers.jpg" />
+    <Content Include="img\ProdThumbs\heart for jesus.jpg" />
+    <Content Include="img\ProdThumbs\Heros of the Bible.jpg" />
+    <Content Include="img\ProdThumbs\Hersheys Addition Book.jpg" />
+    <Content Include="img\ProdThumbs\Hersheys Kisses Addition.jpg" />
+    <Content Include="img\ProdThumbs\Holidays.jpg" />
+    <Content Include="img\ProdThumbs\I know an old lady stacking cards.jpg" />
+    <Content Include="img\ProdThumbs\I love b ball.bmp.jpg" />
+    <Content Include="img\ProdThumbs\I love b ball.jpg" />
+    <Content Include="img\ProdThumbs\I love football.jpg" />
+    <Content Include="img\ProdThumbs\ID Badge.jpg" />
+    <Content Include="img\ProdThumbs\In The Hollow of Your Hand.jpg" />
+    <Content Include="img\ProdThumbs\ItsMine.jpg" />
+    <Content Include="img\ProdThumbs\Join the Parade.jpg" />
+    <Content Include="img\ProdThumbs\Jump at the Sun2.jpg" />
+    <Content Include="img\ProdThumbs\Key chain.jpg" />
+    <Content Include="img\ProdThumbs\keychain2.jpg" />
+    <Content Include="img\ProdThumbs\Kids Who Pray for USA Journal.jpg" />
+    <Content Include="img\ProdThumbs\Kindergarten Teacher Pin.jpg" />
+    <Content Include="img\ProdThumbs\Kwanzaa Fun1.jpg" />
+    <Content Include="img\ProdThumbs\Learn to Tell Time Write On.jpg" />
+    <Content Include="img\ProdThumbs\Lessons of Faith.jpg" />
+    <Content Include="img\ProdThumbs\Lessons of Faith1.jpg" />
+    <Content Include="img\ProdThumbs\Little Math Stories.jpg" />
+    <Content Include="img\ProdThumbs\Memory Mate.jpg" />
+    <Content Include="img\ProdThumbs\MLK Inside.jpg" />
+    <Content Include="img\ProdThumbs\MLK Inside1.jpg" />
+    <Content Include="img\ProdThumbs\My Spanish Book of Words.jpg" />
+    <Content Include="img\ProdThumbs\Nursery rhymes file series.jpg" />
+    <Content Include="img\ProdThumbs\Paper Clips.jpg" />
+    <Content Include="img\ProdThumbs\Parables of Jesus.jpg" />
+    <Content Include="img\ProdThumbs\Parables of Jesus1.jpg" />
+    <Content Include="img\ProdThumbs\Parts of Speech 5th gr Good.jpg" />
+    <Content Include="img\ProdThumbs\Parts of Speech Good.jpg" />
+    <Content Include="img\ProdThumbs\Parts of Speech gr 2.bmp" />
+    <Content Include="img\ProdThumbs\Parts of Speech gr 2.jpg" />
+    <Content Include="img\ProdThumbs\Parts of Speech gr 4.jpg" />
+    <Content Include="img\ProdThumbs\Peas in a Pod.jpg" />
+    <Content Include="img\ProdThumbs\PowerThink Gr 2.jpg" />
+    <Content Include="img\ProdThumbs\Red Apron Teachers Rule.jpg" />
+    <Content Include="img\ProdThumbs\Remember Magic Word.jpg" />
+    <Content Include="img\ProdThumbs\RememberYourManners.jpg" />
+    <Content Include="img\ProdThumbs\School House Sweat Shirt.jpg" />
+    <Content Include="img\ProdThumbs\School Photo Cards.jpg" />
+    <Content Include="img\ProdThumbs\Skin Again.jpg" />
+    <Content Include="img\ProdThumbs\Sorting Nuts.jpg" />
+    <Content Include="img\ProdThumbs\spinner.JPG" />
+    <Content Include="img\ProdThumbs\Teacher Memo Pad.jpg" />
+    <Content Include="img\ProdThumbs\Teachers Charm Bracelet.jpg" />
+    <Content Include="img\ProdThumbs\Thesaurus.jpg" />
+    <Content Include="img\ProdThumbs\Tutor%27s Handbook jpg.jpg" />
+    <Content Include="img\ProdThumbs\Tutors Handbook.jpg" />
+    <Content Include="img\ProdThumbs\Vowel Zoo.jpg" />
+    <Content Include="img\ProdThumbs\Word Slide1 ag og ip uck.jpg" />
+    <Content Include="img\ProdThumbs\Write On  Cursive Letters - Good.jpg" />
+    <Content Include="img\spacer.gif" />
+    <Content Include="js\exmplmenu_var.js" />
+    <Content Include="js\jquery.colorbox-min.js" />
+    <Content Include="js\jquery.colorbox.js" />
+    <Content Include="js\jquery.easing.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\menu_com.js" />
+    <Content Include="js\script.js" />
+    <Content Include="layout\Admin_layout.master" />
+    <Content Include="layout\MasterPage2.master" />
+    <Content Include="PrintableOrderForm.aspx" />
+    <Content Include="ProductDetail.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="Question.aspx" />
+    <Content Include="sitemap.xml" />
+    <Content Include="sitemap_OLD.xml" />
+    <Content Include="testpage.aspx" />
+    <Content Include="ThankYou.aspx" />
+    <None Include="OrderForm\orderform.doc" />
+    <Content Include="uc\FeaturedProducts.ascx" />
+    <Content Include="Web.Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\Products\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
