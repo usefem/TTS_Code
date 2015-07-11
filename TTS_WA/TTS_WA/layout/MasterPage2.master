@@ -91,7 +91,12 @@ function Blink(layerName){
     <div id="container">
         <div id="header">
             <table border="0" cellspacing="0" style="width: 100%">
-                <tr>
+            <tr>
+                <td colspan="3" style="padding-left:5px" >
+                    <img src="img/TTS Logo adjustment in paint.jpg" alt="The Teacher's Spot"  />
+                </td>
+            </tr>
+<%--                <tr>
                     <td width="33%">
                         <center>
                             <img src="img/clrpencils.gif" width="75" height="80" /><br />
@@ -126,25 +131,40 @@ function Blink(layerName){
                             </tr>
                         </table>
                     </td>
-                </tr>
+                </tr>--%>
                 <tr>
                     <td colspan="3">
                         <table border="0" style="border-color: Green; background-color: Green;" >
                             <tr>
-                                <td style="background-color: Green; width: 695px; border-right-width: 1px; border-right-color: Black;">
+                                <td style="background-color: Green; width: 445px; border-right-width: 1px; border-right-color: Black;">
                                     <ucCoupon:CouponSearch runat="server" ID="ProdSearch1" />
                                 </td>
-                                <td style="background-color: Green; width: 200px;border-color: Green;">
-                                    <a data-pin-do="buttonFollow" href="http://www.pinterest.com/mrsmoorehead/">The Teacher's
-                                        Spot</a>
+                                <td style="background-color: Green; width: 430px;border-color: Green;">
+                                     <ucPS:ProdSearch runat="server" ID="ucProductSearch" />
+                                </td>
+                                <td style="background-color: Green; width: 120px;border-color: Green;">
+<%--                                    <a data-pin-do="buttonFollow" href="http://www.pinterest.com/mrsmoorehead/">The Teacher's
+                                        Spot</a>--%>
+                                        <!--Pinterest-->
+                                        <a href="http://www.pinterest.com/mrsmoorehead/" target="_blank">
+                                        <img src="/img/social icons/pinterest.png" height="25px" alt="Pinterest" /></a>
+                                        <!--Facebook-->
+                                        <a href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel" target="_blank">
+                                        <img src="/img/social icons/facebook.png" height="25px"  alt="Facebook"/></a>
+                                        <!--Google +-->
+                                        <a href="https://plus.google.com/109131539442430592446/posts" target="_blank">
+                                        <img src="/img/social icons/google.png" height="25px"  alt="Google+"/></a>
+                                        <!--Blogspot-->
+<%--                                        <a href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel" target="_blank">
+                                        <img src="/img/social icons/blogger.png" height="25px" alt="Blogspot" /></a>--%>
                                     <!-- Please call pinit.js only once per page -->
                                     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
                                 </td>
-                                <td style="background-color: Green; width: 100px;border-color: Green;">
+<%--                                <td style="background-color: Green; width: 100px;border-color: Green;">
                                     <div class="fb-follow" data-href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel"
                                         data-colorscheme="light" data-layout="button" data-show-faces="true">
                                     </div>
-                                </td>
+                                </td>--%>
                             </tr>
                         </table>
                     </td>

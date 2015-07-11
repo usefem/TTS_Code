@@ -391,7 +391,9 @@
     <Content Include="ThankYou.aspx" />
     <None Include="OrderForm\orderform.doc" />
     <Content Include="uc\FeaturedProducts.ascx" />
-    <Content Include="Web.Config" />
+    <Content Include="Web.Config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="img\Products\" />
