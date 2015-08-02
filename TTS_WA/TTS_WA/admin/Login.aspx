@@ -15,6 +15,11 @@ MasterPageFile="~/layout/Admin_layout.master" Codebehind="Login.aspx.cs" %>
         </td>
     </tr>
     <tr>
+        <td >
+            <asp:Label Text="" ID="lblMsg" ForeColor="Red" runat="server" />
+        </td>
+    </tr>
+    <tr>
         <td align="center">
         
             <asp:Button runat="server" ID="btnSubmit" Text="Submit"  OnClick="cmdSubmit_Click" />

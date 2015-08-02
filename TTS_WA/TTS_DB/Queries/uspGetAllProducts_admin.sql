@@ -25,7 +25,8 @@ AS
 		  ,sSizes
 		  ,sColors
 		  ,sVideoPath
-		  ,sVideoTitle		  
+		  ,sVideoTitle	
+		  ,sProdName + ' (' + cast(iProductId as varchar(5)) + ')' as ProductPlusID
 	  FROM [dbo].[Product]
 	order by [sProdName]
 	

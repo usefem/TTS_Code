@@ -159,8 +159,19 @@
     <NotInBuild Include="Create Scripts\uspCreate_TTS_Tables.sql">
       <SubType>NotInBuild</SubType>
     </NotInBuild>
+    <NotInBuild Include="Queries\uspGetAllCoupons.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Queries\uspSaveCoupon_admin.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
   </ItemGroup>
   <ItemGroup>
     <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Queries\uspGetCouponByID.sql">
+      <SubType>Code</SubType>
+    </NotInBuild>
   </ItemGroup>
 </Project>

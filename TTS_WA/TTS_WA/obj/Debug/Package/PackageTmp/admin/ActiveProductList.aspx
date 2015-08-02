@@ -9,7 +9,7 @@ MasterPageFile="~/layout/Admin_layout.master" Inherits="TTS.ActiveProductList" %
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="main.aspx">Return to Admin Menu</a>
+    <%--<a href="main.aspx">Return to Admin Menu</a>--%>
     </b>
     <asp:DataList ID="dlProducts" RepeatDirection="Horizontal" RepeatColumns="2" runat="server">
         <HeaderTemplate>

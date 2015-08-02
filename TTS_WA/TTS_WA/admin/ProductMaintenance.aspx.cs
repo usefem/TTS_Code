@@ -45,7 +45,7 @@ namespace TTS
             ds = da.GetAllProducts_Admin();
 
             lstProducts.DataSource = ds.Tables[0];
-            lstProducts.DataTextField = "sProdName";
+            lstProducts.DataTextField = "ProductPlusID";
             lstProducts.DataValueField = "iProductId";
 
             lstProducts.DataBind();

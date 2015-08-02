@@ -3,7 +3,7 @@
 
 <%@ MasterType VirtualPath="~/layout/MasterPage2.master" %>
 <asp:Content ContentPlaceHolderID="MainContent" runat="server" ID="cMain">
-    Download <a href="orderform/orderform.doc">Order form</a>
+    Download <a href="orderform/orderform.pdf">Order form</a>
     <br />
     <br />
     <b>The Teacher's Spot Price list as of

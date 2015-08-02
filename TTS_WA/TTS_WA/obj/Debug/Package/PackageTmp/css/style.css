@@ -2,8 +2,8 @@
 
 		body 
 		{
-		     background:#39414A;
-			/*background-color: #6699CC;*/
+		     /*background:#39414A;  UEM 7/2/15 */
+			background-color: #336699;
 			}
 
 		#container {
@@ -101,11 +101,13 @@
 
 		#header {
 			border-bottom: 4px solid #948979;
-			padding-top: 5px;
+			/*padding-top: 5px;    UEM 7/2/15*/
 			clear: both;
 			margin-bottom: 15px;
 			/*background-image: url(../img/blue_bg.jpg);*/
-			background-color: #EEF3E2;/*#3333FF;*/
+			/*background-color: #EEF3E2;*/
+			background-color: #000000;/*UEM 7/2/15*/
+			
 
 		}
 		
@@ -126,6 +128,7 @@
 			border-style: solid;
 			border-bottom: solid;
 			float: left;
+			
 		}
 	
 		#menu1 li a {
@@ -282,3 +285,11 @@
 			color: #FFFFFF;
 		}
         */
+        
+        /* ADMIN Coupon Code Management */
+        
+        .labelTD {width:200px}
+        
+        .inputTD {width:300px}
+        
+        /* ADMIN Coupon Code Management End */

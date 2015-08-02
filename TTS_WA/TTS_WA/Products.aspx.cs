@@ -336,7 +336,7 @@ namespace TTS
                     lblProdType.Text = "Math";
                     break;
                 case "la":
-                    lblProdType.Text = "Language Arts";
+                    lblProdType.Text = "ELA";
                     break;
                 case "cb":
                     lblProdType.Text = "Children`s Books";
@@ -376,6 +376,9 @@ namespace TTS
                     break;
                 case "gft":
                     lblProdType.Text = "Gifts for the Teacher";
+                    break;
+                case "dls":
+                    lblProdType.Text = "Downloads";
                     break;
                 default:
                     //lblProdType.Text = "Math";

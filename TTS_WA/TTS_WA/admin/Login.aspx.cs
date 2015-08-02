@@ -31,6 +31,7 @@ public partial class admin_Login : System.Web.UI.Page
         }
         else
         {
+            lblMsg.Text = "Invaild login!";
             //set cookie counter
             if (Request.Cookies["tts"] == null)
             {

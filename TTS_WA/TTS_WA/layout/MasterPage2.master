@@ -179,7 +179,7 @@ function Blink(layerName){
             <li><a href="Products.aspx?CatId=gft" title="Gifts for the Teacher">Teacher's Gifts</a></li>
             <%--<li><a href="Products.aspx?CatId=ce" title="Character Education">Character Education</a></li>--%>
             <li><a href="Products.aspx?CatId=math" title="Math">Math</a></li>
-            <li><a href="Products.aspx?CatId=la" title="Language Arts">Language Arts</a></li>
+            <li><a href="Products.aspx?CatId=la" title="Language Arts">ELA</a></li>
             <%--<li><a href="Products.aspx?CatId=cb" title="Children's Books">Children's Books</a></li>--%>
             <li><a href="Products.aspx?CatId=bi" title="Black Intrest">Black Interest</a></li>
             <%--<li><a href="Products.aspx?CatId=sci" title="Science">Science</a></li>--%>

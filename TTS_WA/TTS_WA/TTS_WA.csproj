@@ -55,6 +55,13 @@
     <Compile Include="admin\ActiveProductList.aspx.designer.cs">
       <DependentUpon>ActiveProductList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\CouponCodes.aspx.cs">
+      <DependentUpon>CouponCodes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\CouponCodes.aspx.designer.cs">
+      <DependentUpon>CouponCodes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -112,6 +119,13 @@
     </Compile>
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FreeDownloads.aspx.cs">
+      <DependentUpon>FreeDownloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FreeDownloads.aspx.designer.cs">
+      <DependentUpon>FreeDownloads.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,9 +217,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\CouponCodes.aspx" />
+    <Content Include="css\pikaday.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\theme.css" />
+    <Content Include="FreeDownloads.aspx" />
     <Content Include="img\Free Downloads_sm.jpg" />
+    <Content Include="img\social icons\blogger.png" />
+    <Content Include="img\social icons\facebook.png" />
+    <Content Include="img\social icons\google.png" />
+    <Content Include="img\social icons\pinterest.png" />
     <Content Include="img\TPT Cover.jpg" />
+    <Content Include="img\TTS Logo adjustment in paint.jpg" />
+    <Content Include="js\moment.js" />
     <Content Include="PageNotFound.aspx" />
+    <Content Include="pikaday.js" />
     <Content Include="uc\CouponSearch.ascx" />
     <Content Include="uc\ProductSearch.ascx" />
   </ItemGroup>
@@ -389,6 +415,10 @@
     <Content Include="sitemap_OLD.xml" />
     <Content Include="testpage.aspx" />
     <Content Include="ThankYou.aspx" />
+    <None Include="downloads\101 Sight Words.pdf" />
+    <None Include="downloads\Free Word Slides.pdf" />
+    <None Include="downloads\R Controlled Blends Clothes Pin Game.pdf" />
+    <None Include="downloads\Two Letter Words Book1.pdf" />
     <None Include="OrderForm\orderform.doc" />
     <Content Include="uc\FeaturedProducts.ascx" />
     <Content Include="Web.Config">

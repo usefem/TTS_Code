@@ -11,6 +11,7 @@ MasterPageFile="~/layout/Admin_layout.master" Codebehind="main.aspx.cs" %>
         <b><a href="ProductMaintenance.aspx">Product Maintenance</a></b><br /><br />
         <b><a href="ProductTypes.aspx">Set Up Product Types</a></b><br /><br />
         <b><a href="ActiveProductList.aspx">Active Product List</a></b><br /><br />
+        <b><a href="CouponCodes.aspx">Manage Coupon Codes</a></b><br /><br />
         
     </div>
 

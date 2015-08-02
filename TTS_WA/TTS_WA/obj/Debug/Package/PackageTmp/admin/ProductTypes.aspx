@@ -30,7 +30,7 @@ Inherits="TTS.ProductTypes"  MasterPageFile="~/layout/Admin_layout.master" Codeb
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="main.aspx"  >Return to Admin Menu</a>
+                <%--<a href="main.aspx"  >Return to Admin Menu</a>--%>
             </div>            
         </td>
     </tr>

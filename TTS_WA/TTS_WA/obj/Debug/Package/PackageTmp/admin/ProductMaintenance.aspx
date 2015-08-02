@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="TTS.ProductMaintenance" MasterPageFile="~/layout/Admin_layout.master"
-    Codebehind="ProductMaintenance.aspx.cs" %>
+    CodeBehind="ProductMaintenance.aspx.cs" %>
 
 <%@ MasterType VirtualPath="~/layout/Admin_layout.master" %>
 <asp:Content ContentPlaceHolderID="MainContent" runat="server" ID="cMain">
@@ -19,9 +19,8 @@
             </td>
             <td valign="top">
                 <asp:Button runat="server" ID="butSaveProduct" Text="Save Product" OnClick="butSaveProduct_Click" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="main.aspx">Return to Admin Menu</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <%--<a href="main.aspx">Return to Admin Menu</a>--%>
                 <div>
                     <asp:Label runat="server" ID="lblMsg" Font-Bold="true" Font-Size="large" />
                 </div>
@@ -29,18 +28,22 @@
                     <table>
                         <tr>
                             <td>
-                                Product 
+                                Product
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="txtProdName" Width="300px"></asp:TextBox></td>
+                                <asp:TextBox runat="server" ID="txtProdName" Width="300px"></asp:TextBox>
+                            </td>
                             <td>
                                 <asp:RequiredFieldValidator runat="server" ID="rfvProdName" ControlToValidate="txtProdName"
-                                    ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator></td>
+                                    ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
-                            <td> Product ID
+                            <td>
+                                Product ID
                             </td>
-                            <td><asp:Label BackColor="Beige" Width="100px"  runat="server" ID="lblProdId" />
+                            <td>
+                                <asp:Label BackColor="Beige" Width="100px" runat="server" ID="lblProdId" />
                             </td>
                         </tr>
                         <tr>
@@ -48,7 +51,8 @@
                                 Item Num.
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="txtItemNum" Width="300px"></asp:TextBox></td>
+                                <asp:TextBox runat="server" ID="txtItemNum" Width="300px"></asp:TextBox>
+                            </td>
                             <td>
                                 <asp:RequiredFieldValidator runat="server" ID="rfvItemNumber" ControlToValidate="txtItemNum"
                                     ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
@@ -70,7 +74,8 @@
                                 Image Name
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="txtImageName" Width="300px"></asp:TextBox></td>
+                                <asp:TextBox runat="server" ID="txtImageName" Width="300px"></asp:TextBox>
+                            </td>
                             <td>
                                 &nbsp;
                             </td>
@@ -80,9 +85,11 @@
                                 Weight
                             </td>
                             <td>
-                                <asp:TextBox runat="server" ID="txtWeight" Width="30px"></asp:TextBox></td>
+                                <asp:TextBox runat="server" ID="txtWeight" Width="30px"></asp:TextBox>
+                            </td>
                             <td>
-                                &nbsp;</td>
+                                &nbsp;
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -93,7 +100,8 @@
                             </td>
                             <td>
                                 <asp:RequiredFieldValidator runat="server" ID="rfvQty" ControlToValidate="txtQty"
-                                    ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator></td>
+                                    ErrorMessage="*" ForeColor="red"></asp:RequiredFieldValidator>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -104,7 +112,8 @@
                                     Wrap="true" Rows="6" Width="425"></asp:TextBox>
                             </td>
                             <td>
-                                &nbsp;</td>
+                                &nbsp;
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -114,49 +123,56 @@
                                 <asp:TextBox ID="txtSizes" runat="server" MaxLength="50" Width="300px"></asp:TextBox>
                             </td>
                             <td>
-                                Small|Medium|XL</td>
+                                Small|Medium|XL
+                            </td>
                         </tr>
                         <tr>
                             <td>
                                 Colors
                             </td>
-                            <td >
+                            <td>
                                 <asp:TextBox ID="txtColors" runat="server" MaxLength="100" Width="300px"></asp:TextBox>
                             </td>
                             <td>
-                                Red|Blue</td>
+                                Red|Blue
+                            </td>
                         </tr>
-                        
                         <tr>
                             <td>
                                 Video Path
                             </td>
-                            <td  colspan="2">
+                            <td colspan="2">
                                 <asp:TextBox ID="txtVideoPath" runat="server" MaxLength="100" Width="300px"></asp:TextBox>
                             </td>
-                        </tr>                        
+                        </tr>
                         <tr>
                             <td>
                                 Video Title
                             </td>
-                            <td  colspan="2">
+                            <td colspan="2">
                                 <asp:TextBox ID="txtVideoTitle" runat="server" MaxLength="150" Width="300px"></asp:TextBox>
                             </td>
-                        </tr>                          
+                        </tr>
                         <tr>
                             <td colspan="3">
                                 <asp:HiddenField runat="server" ID="hdnProductID" />
                             </td>
                         </tr>
+                    </table>
+                    <table>
                         <tr>
-                            <td>Small Image</td>
-                            <td>Large Image</td>
+                            <td>
+                                Small Image
+                            </td>
+                            <td>
+                                Large Image
+                            </td>
                         </tr>
                         <tr>
                             <td valign="top">
                                 <asp:Image runat="server" ID="imgSmall" Visible="false" />
                             </td>
-                            <td colspan="2" valign="top">
+                            <td  valign="top">
                                 <asp:Image runat="server" ID="imgLarge" Width="400px" Visible="false" />
                             </td>
                         </tr>

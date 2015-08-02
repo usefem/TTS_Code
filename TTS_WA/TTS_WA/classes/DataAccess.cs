@@ -16,6 +16,8 @@ namespace TTS
     public class DataAccess : IDisposable
     {
 
+ 
+
 
         #region "Site Procs"
         /// <summary>
@@ -285,6 +287,52 @@ namespace TTS
 
         }
 
+
+        /// <summary>
+        /// Run stored procedure.
+        /// </summary>
+        /// <param name="procName">Name of stored procedure.</param>
+        /// <param name="dataReader">Return result of procedure.</param>
+        public DataSet GetAllCoupons()
+        {
+ 
+            DataSet MyDataSet = new DataSet();
+
+            SqlCommand cmd = CreateCommand("[uspGetAllCoupons]", null);
+
+            //SqlConnection MyConnection = con;
+            SqlDataAdapter MyAdapter = new SqlDataAdapter(cmd);
+
+            MyAdapter.Fill(MyDataSet, "MyTable");
+
+            return MyDataSet;
+        }
+
+        /// <summary>
+        /// Insert new Coupon.
+        /// </summary>
+        /// <param name="procName">Name of stored procedure.</param>
+        /// <param name="dataReader">Return result of procedure.</param>
+        public bool saveCoupon_Admin(int iCouponID, string szCouponCode, string szCouponName
+                                                , string szDescription
+                                                , double fDiscount
+                                                , DateTime dtStartDate
+                                                , DateTime dtEndDate)
+        {
+            SqlCommand cmd = CreateCommand("uspSaveCoupon_admin", null);
+
+            //SqlConnection MyConnection = con;
+            cmd.Parameters.Add(new SqlParameter("@iCouponID", iCouponID));
+            cmd.Parameters.Add(new SqlParameter("@szCouponCode", szCouponCode));
+            cmd.Parameters.Add(new SqlParameter("@szCouponName", szCouponName));
+            cmd.Parameters.Add(new SqlParameter("@szDescription", szDescription));
+            cmd.Parameters.Add(new SqlParameter("@fDiscount", fDiscount));
+            cmd.Parameters.Add(new SqlParameter("@dtStartDate", dtStartDate));
+            cmd.Parameters.Add(new SqlParameter("@dtEndDate", dtEndDate));
+            
+            int rows = cmd.ExecuteNonQuery();
+            return rows > 0 ? true : false;
+        }
 
 #endregion
 
