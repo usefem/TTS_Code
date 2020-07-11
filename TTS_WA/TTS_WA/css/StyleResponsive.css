@@ -1,0 +1,123 @@
+﻿#divCoupon 
+{
+}
+#divSearch
+{
+}
+#divSocial
+{
+
+}
+
+#divSocial img
+{
+    height:30px
+}
+
+#header
+{
+    background-color:Green;
+}
+
+.headerBar 
+{
+    height:30px;
+    float:left;
+}
+
+.productNew 
+{
+    border-radius: 25px;
+    background-color: #ffff99;
+    border: solid 2px black;
+    width: 80%;
+    padding:5px;
+}
+
+.prodImg
+{
+    float:left;
+    width:15%;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.prodImg img
+{
+    height:120px;
+}
+
+
+.prodDescNew
+{
+    float:left;
+    width:60%;
+}
+
+.prodPrice
+{
+    float:left;
+    width:15%;
+}
+/*
+@media screen and (max-width : 1100px) 
+{
+    #container 
+    {
+        width: 90%;
+    }
+    
+    #content
+    {
+        width: 75%;
+    }
+    .productNew 
+    {
+        width:90%;
+    }
+}
+
+@media screen and (max-width : 950px) 
+{
+    #container 
+    {
+        width: 100%;
+    }
+    
+    #content
+    {
+        width: 65%;
+    }
+    .productNew 
+    {
+        width:90%;
+    }
+}
+
+
+
+@media screen and (max-width : 600px) 
+{
+   
+    #content
+    {
+        float:left;
+        width: 65%;
+    }
+    
+    .prodDescNew
+    {
+        display:none;
+    }    
+    
+}
+
+@media screen and (max-width : 500px) 
+{
+     #menu1
+    {
+        display:none;
+    }
+}
+
+*/

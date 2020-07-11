@@ -63,8 +63,15 @@ namespace TTS
                     //pnlShowProduct.Visible = false;
                     //pnlNoProduct.Visible = true;
                     //litMessage.Text = string.Format("<b>{0}</b>:  Sorry, this item is out of stock.", dt.Rows[0]["sProdName"].ToString());
-                    this.Master.MetaTag = "<meta name=\"robots\" content=\"noindex,follow\" /> ";
+                    //this.Master.MetaTag = "<meta name=\"robots\" content=\"noindex,follow\" /> ";
                     //}
+
+                    //Share links...
+                    litShareFBLink.Text = string.Format("<a target=\"_blank\" href=\"https://www.facebook.com/sharer/sharer.php?u=http://theteachersspot.com/ProductDetail.aspx?ProdId={0}\"><img src='img/social icons/facebook.png' height='30px' alt='Facebook' /></a>", Request.QueryString["ProdID"]);
+                    litShareTwitterLink.Text = string.Format("<a target=\"_blank\" href=\"https://twitter.com/home?status=http://theteachersspot.com/ProductDetail.aspx?ProdId={0}\"><img src='img/social icons/Twitter round.png' height='30px' alt='Twitter' /></a>", Request.QueryString["ProdID"]);
+                    litShareGooglePlusLink.Text = string.Format("<a target=\"_blank\" href=\"https://plus.google.com/share?url=http://theteachersspot.com/ProductDetail.aspx?ProdId={0}\"><img src='img/social icons/google.png' height='30px' alt='Google+' /></a>", Request.QueryString["ProdID"]);
+
+                    litFacebookMetaImage.Text = string.Format("<meta property=\"og:image\" content=\"http://theteachersspot.com/{0}\"/>", imgProd.Src.Replace(" ","%20"));
                 }
                 else
                 {

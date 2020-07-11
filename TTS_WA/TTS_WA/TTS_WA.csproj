@@ -144,6 +144,13 @@
     <Compile Include="layout\MasterPage2.master.designer.cs">
       <DependentUpon>MasterPage2.master</DependentUpon>
     </Compile>
+    <Compile Include="layout\NewMaster.Master.cs">
+      <DependentUpon>NewMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layout\NewMaster.Master.designer.cs">
+      <DependentUpon>NewMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="PageNotFound.aspx.cs">
       <DependentUpon>PageNotFound.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,6 +171,13 @@
     </Compile>
     <Compile Include="ProductDetail.aspx.designer.cs">
       <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsNew.aspx.cs">
+      <DependentUpon>ProductsNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductsNew.aspx.designer.cs">
+      <DependentUpon>ProductsNew.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
@@ -220,18 +234,36 @@
     <Content Include="admin\CouponCodes.aspx" />
     <Content Include="css\pikaday.css" />
     <Content Include="css\site.css" />
+    <Content Include="css\StyleResponsive.css" />
     <Content Include="css\theme.css" />
+    <Content Include="downloads\101 Sight Words Cover.jpg" />
+    <Content Include="downloads\Black History Word List cover.png" />
+    <Content Include="downloads\Bullying.png" />
+    <Content Include="downloads\Dr Seuss literacy cover.jpg" />
+    <Content Include="downloads\Free Word Slide cover.jpg" />
+    <Content Include="downloads\R Controlled Blends Clothes Pin Game Cover.jpg" />
+    <Content Include="downloads\Ready for School coloring pages.png" />
+    <Content Include="downloads\Sight word book1.jpg" />
+    <Content Include="downloads\Two Letter Sight Word Book1 Cover.jpg" />
+    <Content Include="favicon.ico" />
     <Content Include="FreeDownloads.aspx" />
+    <Content Include="img\advertisers\BTS Sale August.jpg" />
+    <Content Include="img\advertisers\Clothing advertisement_sm.jpg" />
+    <Content Include="img\advertisers\Kwanzaa Fun1.jpg" />
+    <Content Include="img\advertisers\Sentence Strips cover.png" />
     <Content Include="img\Free Downloads_sm.jpg" />
     <Content Include="img\social icons\blogger.png" />
     <Content Include="img\social icons\facebook.png" />
     <Content Include="img\social icons\google.png" />
     <Content Include="img\social icons\pinterest.png" />
+    <Content Include="img\social icons\Tumblr round.png" />
+    <Content Include="img\social icons\Twitter round.png" />
     <Content Include="img\TPT Cover.jpg" />
     <Content Include="img\TTS Logo adjustment in paint.jpg" />
     <Content Include="js\moment.js" />
     <Content Include="PageNotFound.aspx" />
     <Content Include="pikaday.js" />
+    <Content Include="ProductsNew.aspx" />
     <Content Include="uc\CouponSearch.ascx" />
     <Content Include="uc\ProductSearch.ascx" />
   </ItemGroup>
@@ -416,9 +448,15 @@
     <Content Include="testpage.aspx" />
     <Content Include="ThankYou.aspx" />
     <None Include="downloads\101 Sight Words.pdf" />
+    <None Include="downloads\Black History Word List for Writing.pdf" />
+    <None Include="downloads\Bullying Writing Prompt.pdf" />
+    <None Include="downloads\Coloring Pages School Theme.pdf" />
+    <None Include="downloads\Dr Seuss Literacy in Mrs Moorehead%27s Class.pdf" />
     <None Include="downloads\Free Word Slides.pdf" />
     <None Include="downloads\R Controlled Blends Clothes Pin Game.pdf" />
+    <None Include="downloads\Sight word Book book1.pdf" />
     <None Include="downloads\Two Letter Words Book1.pdf" />
+    <Content Include="layout\NewMaster.Master" />
     <None Include="OrderForm\orderform.doc" />
     <Content Include="uc\FeaturedProducts.ascx" />
     <Content Include="Web.Config">

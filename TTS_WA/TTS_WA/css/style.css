@@ -74,18 +74,15 @@
 		a img{
 	  		border: none;
 	  	}
-
 		img.left,img.center,img.right {
 	  		padding: 4px;
 	  		border: 1px dashed #D1C9BE;
 	  		margin: 0px;
 	  	}
-
 		img.left {
 	  		float: left;
 	  		margin: 0 12px 5px 0;
 	  	}
-
 		img.center {
 			display: block;
 	  		margin: 0 auto 5px auto;
@@ -95,7 +92,6 @@
 	  		float: right;
 	  		margin: 0 0 5px 12px;
 	  	}
-
 */		
 /* HEADER */
 
@@ -123,11 +119,15 @@
 			width: 160px;
 			margin: 10px;
 			border-style:  solid solid solid solid;
-			border-color: #3D261D;
-			border-width: 1px;
+			/*border-color: #3D261D;*/
+			border-color: #6699CC;
+			/*border-width: 1px;
 			border-style: solid;
-			border-bottom: solid;
+			border-bottom: solid;*/
 			float: left;
+			border-radius: 25px;
+			padding:6px;
+			background-color: #6699CC;
 			
 		}
 	
@@ -167,6 +167,21 @@
    			border: none;
 		} 
 
+    .product
+    {
+        border-radius: 25px;  
+        background-color: #ffff99; 
+        border:solid 2px black;
+        width: 650px;
+    }
+    
+    .freeDownload
+    {
+        border-radius: 25px; 
+        background-color: #ffff99; 
+        border: solid 2px black;
+        width: 350px;
+    }
 		
 /* CONTENT */
 

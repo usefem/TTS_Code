@@ -13,6 +13,7 @@
     <asp:Literal runat="server" ID="litTitle" />
     <asp:Literal runat="server" ID="litMetaTag" />
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <asp:ContentPlaceHolder ID="cphHead" runat="server">
     </asp:ContentPlaceHolder>
     <!-- Please call pinit.js only once per page -->
@@ -134,31 +135,33 @@ function Blink(layerName){
                 </tr>--%>
                 <tr>
                     <td colspan="3">
-                        <table border="0" style="border-color: Green; background-color: Green;" >
+                        <table style="background-color: Green; border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;" >
                             <tr>
-                                <td style="background-color: Green; width: 445px; border-right-width: 1px; border-right-color: Black;">
+                                <td style="background-color: Green; width: 435px; border-right-width: 1px; border-right-color: Black;">
                                     <ucCoupon:CouponSearch runat="server" ID="ProdSearch1" />
                                 </td>
-                                <td style="background-color: Green; width: 430px;border-color: Green;">
+                                <td style="background-color: Green; width: 340px;border-color: Green;">
                                      <ucPS:ProdSearch runat="server" ID="ucProductSearch" />
                                 </td>
-                                <td style="background-color: Green; width: 120px;border-color: Green;">
+                                <td style="background-color: Green; width: 220px;border-color: Green; text-align:right;" >
+                                        <b style="margin-bottom:5px">Visit us on :</b>
 <%--                                    <a data-pin-do="buttonFollow" href="http://www.pinterest.com/mrsmoorehead/">The Teacher's
                                         Spot</a>--%>
                                         <!--Pinterest-->
                                         <a href="http://www.pinterest.com/mrsmoorehead/" target="_blank">
-                                        <img src="/img/social icons/pinterest.png" height="25px" alt="Pinterest" /></a>
+                                        <img src="/img/social icons/pinterest.png" height="30px" alt="Pinterest" /></a>
                                         <!--Facebook-->
                                         <a href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel" target="_blank">
-                                        <img src="/img/social icons/facebook.png" height="25px"  alt="Facebook"/></a>
+                                        <img src="/img/social icons/facebook.png" height="30px"  alt="Facebook"/></a>
                                         <!--Google +-->
                                         <a href="https://plus.google.com/109131539442430592446/posts" target="_blank">
-                                        <img src="/img/social icons/google.png" height="25px"  alt="Google+"/></a>
+                                        <img src="/img/social icons/google.png" height="30px"  alt="Google+"/></a>
                                         <!--Blogspot-->
 <%--                                        <a href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel" target="_blank">
                                         <img src="/img/social icons/blogger.png" height="25px" alt="Blogspot" /></a>--%>
                                     <!-- Please call pinit.js only once per page -->
                                     <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </td>
 <%--                                <td style="background-color: Green; width: 100px;border-color: Green;">
                                     <div class="fb-follow" data-href="https://www.facebook.com/pages/The-Teachers-Spot/217009408336891?ref=aymt_homepage_panel"
@@ -176,7 +179,8 @@ function Blink(layerName){
         <ul>
             <li><a href="Default.aspx" title="Home Page">Home</a></li>
             <li><a href="Products.aspx" title="All Products">All Products</a></li>
-            <li><a href="Products.aspx?CatId=gft" title="Gifts for the Teacher">Teacher's Gifts</a></li>
+            <li><a href="FreeDownloads.aspx" title="Free Downloads">Free Downloads</a></li>
+            <li><a href="Products.aspx?CatId=gft" title="Gifts for the Teacher">For the Teacher</a></li>
             <%--<li><a href="Products.aspx?CatId=ce" title="Character Education">Character Education</a></li>--%>
             <li><a href="Products.aspx?CatId=math" title="Math">Math</a></li>
             <li><a href="Products.aspx?CatId=la" title="Language Arts">ELA</a></li>

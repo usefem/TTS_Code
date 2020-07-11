@@ -104,6 +104,7 @@ namespace TTS
             else
             {
                 lblProdType.Text = "All Products";
+                this.Master.PageTitle = "All Products";
                 aNext.HRef = string.Format("products.aspx?&Move={0}", Convert.ToString(CurrentPage + 1));
                 aPrev.HRef = string.Format("products.aspx?&Move={0}", Convert.ToString(CurrentPage - 1));
 
@@ -375,16 +376,14 @@ namespace TTS
                     lblProdType.Text = "Character Education";
                     break;
                 case "gft":
-                    lblProdType.Text = "Gifts for the Teacher";
+                    lblProdType.Text = "For the Teacher";
                     break;
                 case "dls":
-                    lblProdType.Text = "Downloads";
+                    lblProdType.Text = "Free Downloads";
                     break;
-                default:
-                    //lblProdType.Text = "Math";
-                    break;
-
-
+                //default:
+                //    lblProdType.Text = "All Products";
+                //    break;
             }
 
             this.Master.PageTitle = lblProdType.Text;

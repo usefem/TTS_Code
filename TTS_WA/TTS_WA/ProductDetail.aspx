@@ -26,10 +26,11 @@
 			});
 		});
 	</script>  
+    <asp:Literal ID="litFacebookMetaImage" runat="server" ></asp:Literal>
+    <meta property="og:type" content="product" />
 
             <!-- Please call pinit.js only once per page -->
-    <script type="text/javascript" async defer data-pin-color="red" data-pin-height="28"
-        data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
+    <script type="text/javascript" async defer data-pin-color="red" data-pin-height="28"  data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 
 </asp:Content>
     
@@ -58,6 +59,18 @@
                                 <br />
                                 <br />
                                 <asp:Literal ID="litPayPalForm" runat="server" />
+                                <hr />
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <b>Share:</b>
+                                        </td>
+                                        <td><asp:Literal ID="litShareFBLink" runat="server" ></asp:Literal></td>
+                                        <td><asp:Literal ID="litShareGooglePlusLink" runat="server" ></asp:Literal></td>
+                                        <td><asp:Literal ID="litShareTwitterLink" runat="server" ></asp:Literal></td>
+                                    </tr>
+                                </table>
+                                
                             </td>
                         </tr>
                     </table>

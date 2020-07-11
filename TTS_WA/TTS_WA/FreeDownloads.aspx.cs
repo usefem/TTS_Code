@@ -11,6 +11,8 @@ namespace TTS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.Master.PageTitle = "Free Downloads";
+            this.Master.MetaTag = "<meta name=\"robots\" content=\"index,follow\" /> "; 
 
         }
     }

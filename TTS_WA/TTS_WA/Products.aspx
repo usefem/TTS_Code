@@ -52,8 +52,8 @@
                     <HeaderTemplate>
                     </HeaderTemplate>
                     <ItemTemplate>
-                        <table width='650' border='0' cellpadding='5' style="background-color: #ffff99; border:solid 2px black">
-                            <tr>
+                        <table border='0' cellpadding='5' class="product">
+                            <tr> 
                                 <td colspan="3">
                                     <span style="font-size: larger; font-family: Comic Sans MS;">
                                         <%# DataBinder.Eval(Container.DataItem, "sProdName")%>

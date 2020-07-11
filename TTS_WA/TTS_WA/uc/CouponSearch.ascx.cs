@@ -28,7 +28,10 @@ using System.Web.UI.HtmlControls;
             }
 
             TTS.Coupon c = new TTS.Coupon();
-            lblCouponMsg.Text = c.Message;
+            if (c.Message.Length > 0)
+            {
+                lblCouponMsg.Text = "<br/>&nbsp;&nbsp;&nbsp;" + c.Message;
+            }
         }
 
         protected void btnCouponSubmit_Click(object sender, EventArgs e)
@@ -39,7 +42,10 @@ using System.Web.UI.HtmlControls;
 
                 if (!c.isValid)
                 {
-                    lblCouponMsg.Text = c.Message;
+                    if (c.Message.Length > 0)
+                    {
+                        lblCouponMsg.Text = "<br/>&nbsp;&nbsp;&nbsp;" + c.Message;
+                    }
                 }
                 else
                 {

@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="TTS._Default" MasterPageFile="~/layout/MasterPage2.master"
+ï»¿<%@ Page Language="C#" AutoEventWireup="true" Inherits="TTS._Default" MasterPageFile="~/layout/MasterPage2.master"
     Codebehind="Default.aspx.cs" %>
 
 <%@ MasterType VirtualPath="~/layout/MasterPage2.master" %>
@@ -121,8 +121,8 @@
                                         </tr>
                                         <tr>
                                             <td>
-                                                The Teacher’s Spot provides discounts on teacher resources, <br />specialty items, centers
-                                                to go, children’s books and more.
+                                                The Teacherâ€™s Spot provides discounts on teaching resources, <br />specialty items, centers
+                                                to go, childrenâ€™s books and more.
                                             </td>
                                         </tr>
                                         <tr>
@@ -132,9 +132,9 @@
                                                         <td >
                                                             <br />
                                                             <%--<span style="font-size: x-large;">--%>
-                                                            <div style="font-size: 16pt; text-align:center;"><span style="color: Red;">Teachers</span> · <span
+                                                            <div style="font-size: 16pt; text-align:center;"><span style="color: Red;">Teachers</span> Â· <span
                                                                 style="color: Yellow;">Parents</span> <br /> <span style="color: Blue;">Homeschoolers</span>
-                                                                · <span style="color: Green;">Educators</span> </div>
+                                                                Â· <span style="color: Green;">Educators</span> </div>
                                                             <br />
                                                             <br />
                                                         </td>
@@ -151,7 +151,7 @@
                                                 <table width="75%" cellpadding="0" cellspacing="0" style="text-align:center">
                                                     <tr>
                                                         <td>
-                                                            Children’s Books</td>
+                                                            Childrenâ€™s Books</td>
                                                         <td>
                                                             Math & LA Workbooks</td>
                                                     </tr>
@@ -189,9 +189,9 @@
                                         <tr>
                                             <td  align="center" >
                                                 <br />
-                                                Don’t see what you’re looking for? Contact Us:<br />
+                                                Donâ€™t see what youâ€™re looking for? Contact Us:<br />
                                                 <a style="color: White;" href="mailto:CustomerService@TheTeachersSpot.com">CustomerService@TheTeachersSpot.com</a><br />
-                                                The Teacher’s Spot<br />
+                                                The Teacherâ€™s Spot<br />
                                                 P.O. Box 691<br />
                                                 Rahway, NJ 07065<br />
                                                 732-259-5582<br />
@@ -208,8 +208,12 @@
             <td valign="top">
                 <div id="ads">
                     <br />
-                    <a href="http://www.teacherspayteachers.com/Store/Mrs-Moorehead" title="Free Downloads"
+<%--                    <a href="http://www.teacherspayteachers.com/Store/Mrs-Moorehead" title="Free Downloads"
                         alt="TTS Workshops" target="_blank">
+                        <img src="/img/free downloads_sm.JPG" width="200px"  />
+                    </a>--%>
+                    <a href="freedownloads.aspx" title="Free Downloads"
+                        alt="Free Downloads" >
                         <img src="/img/free downloads_sm.JPG" width="200px"  />
                     </a>
                     <br />
@@ -220,6 +224,10 @@
                     </a>
                     <br />
                     <br />--%>
+                    <%--<a href="/Products.aspx?CatId=clo" title="BTS Sale August" alt="BTS Sale August"><img src="/img/advertisers/BTS Sale August.jpg" /></a>--%>
+                    <a href="/Products.aspx?CatId=clo" title="Clothing for teachers" alt="Clothing for teachers"><img src="/img/advertisers/Clothing advertisement_sm.jpg" /></a>
+                    <br />
+                    <br />    
                     <a href="http://www.ttsworkshops.com" title="TTS Workshops"
                         alt="TTS Workshops" target="_blank">
                         <img src="/img/advertisers/ClickForWorkshops.JPG" />
@@ -230,11 +238,14 @@
                         target="_blank">
                         <img src="/img/advertisers/fireflylogo2.JPG" />
                     </a>
+                    <br /><br />
+                    <br />
+                    <a target="_blank" href="http://www.teacherspayteachers.com/Product/Fluency-Sentence-Strips-Sight-Words-2868380" title="Fluncey Sentence Strips" alt="Fluncey Sentence Strips"><img src="/img/advertisers/Sentence Strips cover.png" width="200px" /></a>
                 </div>
             </td>
         </tr>
     </table>
-
-    <script language="javascript">Blink('prem_hint');</script>
+<%--    Used for the blinking message that can scroll accross the home page--%>
+  <%--  <script type="text/javascript" language="javascript">Blink('prem_hint');</script>--%>
 
 </asp:Content>

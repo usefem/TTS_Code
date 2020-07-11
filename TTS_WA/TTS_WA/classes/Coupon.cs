@@ -70,7 +70,7 @@ namespace TTS
             {
                 Discount = Convert.ToDouble(HttpContext.Current.Request.Cookies["coupon"]["discount"].ToString());
                  
-                Message = "Coupon code " + Code + " has been entered. " + (Discount * 100) + "% off on all products.";
+                Message = "Coupon code " + Code + " is valid. " + (Discount * 100) + "% off on all products.";
                 return true;
             }
             else
@@ -109,6 +109,15 @@ namespace TTS
                 }
                 else
                 {
+                    if (HttpContext.Current.Request.Cookies["coupon"] != null)
+                    {
+                        //HttpContext.Current.Request.Cookies.Remove("coupon");
+                        HttpCookie couponCookie = HttpContext.Current.Request.Cookies["coupon"];
+                        HttpContext.Current.Response.Cookies.Remove("coupon");
+                        couponCookie.Expires = DateTime.Now.AddDays(-10);
+                        couponCookie.Value = null;
+                        HttpContext.Current.Response.SetCookie(couponCookie);
+                    }
 
                     if (Convert.ToDateTime(dt.Rows[0]["dtEndDate"].ToString()).AddDays(1).Date < DateTime.Now.Date)
                     {
@@ -122,6 +131,16 @@ namespace TTS
             }
             else 
             {
+                if (HttpContext.Current.Request.Cookies["coupon"] != null)
+                {
+                    //HttpContext.Current.Request.Cookies.Remove("coupon"); 
+                    HttpCookie couponCookie = HttpContext.Current.Request.Cookies["coupon"];
+                    HttpContext.Current.Response.Cookies.Remove("coupon");
+                    couponCookie.Expires = DateTime.Now.AddDays(-10);
+                    couponCookie.Value = null;
+                    HttpContext.Current.Response.SetCookie(couponCookie);
+                }
+
                 Message = "Invalid coupon code.";
             }
             isValid = CheckForCookie();

@@ -13,6 +13,15 @@ namespace TTS {
     public partial class ProductDetail {
         
         /// <summary>
+        /// litFacebookMetaImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litFacebookMetaImage;
+        
+        /// <summary>
         /// pnlShowProduct control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,33 @@ namespace TTS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal litPayPalForm;
+        
+        /// <summary>
+        /// litShareFBLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litShareFBLink;
+        
+        /// <summary>
+        /// litShareGooglePlusLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litShareGooglePlusLink;
+        
+        /// <summary>
+        /// litShareTwitterLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litShareTwitterLink;
         
         /// <summary>
         /// lblProdDesc control.
